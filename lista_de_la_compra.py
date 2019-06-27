@@ -1,8 +1,6 @@
 print()
 print()
 
-print('Está es la lista de la compra:')
-
 lista_de_la_compra = []
 input_usuario = ""
 
@@ -11,9 +9,7 @@ while input_usuario != "FIN":
     if input_usuario != "FIN":
         lista_de_la_compra.append(input_usuario)
 
-cantidad_de_elementos = len(lista_de_la_compra)
-indice = 0
+print('Está es la lista de la compra:')
 
-while indice < cantidad_de_elementos:
-    print('Tengo que comprar {}'.format(lista_de_la_compra[indice]))
-    indice += 1
+for item in lista_de_la_compra:
+    print("Tengo que comprar {}".format(item))
